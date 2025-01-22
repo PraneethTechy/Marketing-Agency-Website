@@ -1,0 +1,242 @@
+ body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+ }
+ .navbar{
+    background-color:#333;
+    overflow: hidden;
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 20px;
+ }
+ .logo{
+   color: white;
+ }
+ .logo h1{
+    margin: 0;
+    font-size: 24px;
+    
+ }
+ .nav-links{
+    display:flex;
+ }
+ 
+ .nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    
+}
+.nav-links a:hover{
+    color:gold
+}
+.main-content {
+   height: 100vh;
+   background-image:url("web-bg.jpeg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   image-rendering: crisp-edges; 
+    image-rendering: pixelated
+   overflow: hidden;
+   
+ }
+ 
+.content-overlay{
+text-align: center;
+color: white;
+padding: 20px;
+background-color: rgba(0,0,0,0.5);
+}
+.content-overlay h2{
+   font-weight: bold;
+}
+.content-overlay p{
+   margin-top: 10px;
+}
+.get-started-button{
+   background-color: #333;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   cursor:pointer;
+   border-radius: 20px;
+   font-size: 18px;
+   transition: background-color 0.5s ease;
+}
+.get-started-button:hover{
+   background-color:gold;
+   color:#555;
+}
+.image{
+   display: block;
+   width: 100%;
+   height: auto;
+   
+}
+.service-card{
+   position: relative;
+   width: calc(33.333% - 20px);
+   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+   transition: box-shadow 0.3s ease;
+}
+.service-card:hover{
+   box-shadow: rgba(3, 107, 244, 0.931) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+.services-container{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 23px; 
+   margin: 10px;
+}
+.overlay{
+   position:absolute;
+   bottom: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.447);
+   width:100%;
+   overflow: hidden;
+   height: 0;
+   transition: 0.6s ease;
+}
+.service-card:hover .overlay{
+   height: 100%;
+
+}
+.text{
+   color: white;
+   font-size: 15px;
+   position: absolute;
+   top: 30%;
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.testimonials-cards{
+     display: flex;
+     flex-direction: column;
+     background-color: #faf4f4;
+
+
+}
+.testimonial-line{
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 20px;
+}
+.testimonial-card{
+   width: 30%;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   margin: 20px;
+   display: flex;
+   transition: box-shadow 0.3s ease;
+   cursor: pointer;
+   
+}
+.testimonial-card img{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   margin: 10px;
+}
+.testimonial-card:hover{
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+}
+.testimonial-content{
+   flex-grow: 1;
+}
+.testimonial-card h3{
+   font-size: 18px;
+   margin-bottom: 10px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.testimonial-card p{
+   font-size: 14px;
+   color: #555;
+}
+
+.contact-container{
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+
+}
+.contact-form{
+   display: flex;
+   flex-direction: column;
+
+}
+
+label{
+   margin-bottom: 10px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+}
+input,textarea{
+   padding: 10px;
+   margin-bottom: 16px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+
+}
+button{
+   background-color: #07aae1;
+   color: white;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+button:hover{
+   background-color: #006888;
+}
+.title{
+   text-align: center;
+   font-family:sans-serif;
+}
+
+.title-2{
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.title123{
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+   padding-top: 23px;
+   font-size:4rem;
+   padding-left: 30px;
+   
+}
+
+@media (max-width: 768px) {
+   .services-container {
+       flex-direction: column;
+       gap: 15px;
+   }
+   .testimonial-line {
+       flex-direction: column;
+   }
+   .testimonial-card {
+       width: 100%;
+   }
+   .nav-links {
+       flex-direction: column;
+       align-items: center;
+   }
+   .nav-links a {
+       padding: 10px 0;
+   }
+}
