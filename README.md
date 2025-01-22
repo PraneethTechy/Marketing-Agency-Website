@@ -22,7 +22,7 @@ JavaScript: Added interactive elements such as transitions for the services sect
 Deployment
 The website has been deployed using Vercel and is accessible at the following link:
 
-Marketing Agency Website Link - 🔗🔗🔗 [https://marketing-agency-website-rho.vercel.app/]  🔗🔗🔗
+Marketing Agency Website Link - 🔗🔗🔗 [[https://marketing-agency-website-rho.vercel.app/](https://marketing-agency-website-qn7je5iun-praneeths-projects-4add8ce3.vercel.app/)]  🔗🔗🔗
   
 
 
